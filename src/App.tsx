@@ -1,10 +1,16 @@
 import React from 'react'
+import SplitScreen from './components/SplitScreen'
+import Left from './components/Left'
+import Right from './components/Right'
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+   <>
+   <SplitScreen leftWeight={15} rightWeight={85} >
+    <Left />
+    <Right />
+   </SplitScreen>
+   </>
   )
 }
 
